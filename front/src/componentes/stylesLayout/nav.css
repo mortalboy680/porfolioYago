@@ -1,0 +1,34 @@
+.navBar {
+    height: 7%;
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    padding: 1em;
+    margin: 0 0 0 0 0;
+    border-radius: 0 0 1em 1em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: sticky;
+}
+
+.navBarUl {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.navBarUlLi {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.navBarUlLi.active {
+    border-bottom: 0.15em solid rgb(0, 0, 0);
+}
+
+@media (max-width: 475px) {
+    .navBar {
+        width: 80%;
+    }
+}
