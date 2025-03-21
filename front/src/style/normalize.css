@@ -7,29 +7,21 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-
 html {
   line-height: 1.15;
-  /* 1 */
   -webkit-text-size-adjust: 100%;
-  /* 2 */
-  background: linear-gradient(270deg, #4a90e2, #5a67d8);
+
+  background: linear-gradient(270deg, #0101DF, #2E2EFE, #5858FA, #819FF7);
   background-size: 400% 400%;
-  animation: backgroundMove 10s ease infinite;
+  animation: backgroundMove 10s ease infinite, fadeIn 1.5s ease-in-out forwards;
+
   opacity: 0;
-  animation: fadeIn 1.5s ease-in-out forwards;
+  /* Inicialmente invisible */
+  overflow: hidden;
+  position: relative;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
+/* Animaciones */
 @keyframes backgroundMove {
   0% {
     background-position: 0% 50%;
@@ -41,6 +33,18 @@ html {
 
   100% {
     background-position: 0% 50%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    /* Empieza invisible */
+  }
+
+  to {
+    opacity: 1;
+    /* Se vuelve visible */
   }
 }
 

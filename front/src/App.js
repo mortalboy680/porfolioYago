@@ -1,11 +1,11 @@
 import './App.css';
 import './style/normalize.css';
 import 'boxicons';
-import Nav from './componentes/layout/Nav.js';
-import Home from './componentes/pages/Home.js';
-import Experience from './componentes/pages/Experience.js';
-import Proyect from './componentes/pages/Proyect.js';
-import Footer from './componentes/layout/Footer.js';
+import Nav from './components/layout/Nav.js';
+import Home from './components/pages/home.js';
+import Experience from './components/pages/experience.js';
+import Proyect from './components/pages/proyect.js';
+import Footer from './components/layout/Footer.js';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {

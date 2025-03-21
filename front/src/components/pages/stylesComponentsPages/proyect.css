@@ -1,0 +1,53 @@
+.proyectDivBody {
+    display: flex;
+    justify-content: center;
+    padding: 0.25em;
+    overflow-y: auto;
+    height: 50%;
+    width: 30em;
+    background-color: azure;
+    border-radius: 1em;
+    margin: 2em;
+}
+
+.proyectFrom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.input {
+    border-radius: 1em;
+    text-align: center;
+    border: none;
+    padding: .50em;
+    border: black solid 1px;
+}
+
+.textarea {
+    border-radius: 1em;
+    width: 300px;
+    height: 150px;
+    resize: none;
+    text-align: center;
+    border: none;
+    border: black solid 1px;
+}
+
+.buttom {
+    border-radius: 1em;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 1em;
+    background-color: #A9BCF5;
+}
+
+.buttom:hover {
+    border-radius: 1em;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 1em;
+    background-color: #2E2EFE;
+}

@@ -1,0 +1,72 @@
+.experienceDivBody {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.25em;
+    /* Altura del contenedor (ajústalo según lo necesites) */
+    overflow-y: auto;
+    /* Habilita el scroll vertical */
+    height: 70%;
+    width: 30em;
+    background-color: azure;
+    border-radius: 1em;
+    margin: 2em;
+    flex-wrap: wrap;
+}
+
+.experienceDivElement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 20em;
+    width: 100%;
+    border-radius: 1em;
+    margin: 2em;
+    background-color: #5882FA;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.experienceDivElementImg {
+    height: auto;
+    width: 80%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 1em;
+    margin: 1em;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 1em;
+}
+
+img:hover {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 1em;
+    transform: scale(1.1);
+}
+
+.experienceDivElementUl {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+
+.experienceDivElementUlLi {
+    margin: 0.50em;
+    padding: 0.10em;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.25em;
+}
+
+.experienceDivElementUlLi:hover {
+    margin: 0.50em;
+    padding: 0.10em;
+    background-color: rgb(146, 146, 146);
+    border-radius: 0.25em;
+    transform: scale(1.25);
+}

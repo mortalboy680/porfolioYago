@@ -1,5 +1,5 @@
 import { useState } from "react";
-import './../stylesLayout/nav.css';
+import '../stylesLayout/nav.css';
 import { Link, useLocation } from "react-router-dom";
 
 const Nav = () => {
