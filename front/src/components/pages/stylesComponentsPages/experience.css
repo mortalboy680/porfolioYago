@@ -2,9 +2,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0.25em;
-    /* Altura del contenedor (ajústalo según lo necesites) */
     overflow-y: auto;
-    /* Habilita el scroll vertical */
     height: 70%;
     width: 30em;
     background-color: azure;
@@ -69,4 +67,10 @@ img:hover {
     background-color: rgb(146, 146, 146);
     border-radius: 0.25em;
     transform: scale(1.25);
+}
+
+@media (max-width: 645px) {
+    .experienceDivBody {
+        width: 20em;
+    }
 }

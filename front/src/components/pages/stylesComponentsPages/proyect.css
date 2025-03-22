@@ -15,7 +15,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 2em;
+    gap: 1em;
 }
 
 .input {
@@ -24,12 +24,13 @@
     border: none;
     padding: .50em;
     border: black solid 1px;
+    width: 20em;
 }
 
 .textarea {
     border-radius: 1em;
-    width: 300px;
-    height: 150px;
+    width: 20em;
+    height: 10em;
     resize: none;
     text-align: center;
     border: none;
@@ -50,4 +51,10 @@
     color: rgb(0, 0, 0);
     padding: 1em;
     background-color: #2E2EFE;
+}
+
+@media (max-width: 645px) {
+    .proyectDivBody {
+        width: 22em;
+    }
 }

@@ -1,29 +1,36 @@
 import './../stylesComponentsPages/experience.css';
 
+const projects = [
+    {
+        title: "Mi página web",
+        image: "/Proyectos/proyecto1.png",
+        technologies: ["javascript", "css3", "git", "react"]
+    },
+    {
+        title: "Otro Proyecto",
+        image: "/Proyectos/proyecto2.png",
+        technologies: ["html5", "sass", "github"]
+    }
+];
+
 const Experience = () => {
     return (
         <div className='experienceDivBody'>
-
-            <div className='experienceDivElement'>
-                <h2>Mi pagina web</h2>
-                <div className='experienceDivElementImg'>
-                    <img src="/Proyectos/proyecto1.png"></img>
+            {projects.map((project, index) => (
+                <div key={index} className='experienceDivElement'>
+                    <h2>{project.title}</h2>
+                    <div className='experienceDivElementImg'>
+                        <img src={project.image} alt={project.title} />
+                    </div>
+                    <ul className="experienceDivElementUl">
+                        {project.technologies.map((tech, techIndex) => (
+                            <li key={techIndex} className='experienceDivElementUlLi'>
+                                <box-icon type='logo' name={tech}></box-icon>
+                            </li>
+                        ))}
+                    </ul>
                 </div>
-                <ul className="experienceDivElementUl">
-                    <li className='experienceDivElementUlLi'><box-icon type='logo' name='javascript'></box-icon></li>
-                    <li className='experienceDivElementUlLi'><box-icon type='logo' name='css3'></box-icon></li>
-                    <li className='experienceDivElementUlLi'><box-icon type='logo' name='git'></box-icon></li>
-                    <li className='experienceDivElementUlLi'><box-icon type='logo' name='react'></box-icon></li>
-
-                </ul>
-            </div>
-            {/*<div className='experienceDivElement'></div>
-            <div className='experienceDivElement'></div>
-            <div className='experienceDivElement'></div>
-            <div className='experienceDivElement'></div>
-            <div className='experienceDivElement'></div>
-            <div className='experienceDivElement'></div>
-            <div className='experienceDivElement'></div>*/}
+            ))}
         </div>
     );
 };
