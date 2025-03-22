@@ -13,8 +13,8 @@ function App() {
     <Router>
       <div className='divBody manrope'>
         <Nav />
-        <Home />
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/proyect" element={<Proyect />} />
         </Routes>
