@@ -1,4 +1,5 @@
 import './../stylesComponentsPages/experience.css';
+import 'boxicons';
 
 const projects = [
     {

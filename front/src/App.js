@@ -1,6 +1,6 @@
 import './App.css';
 import './style/normalize.css';
-import 'boxicons';
+import 'boxicons/css/boxicons.min.css';
 import Nav from './components/layout/Nav.js';
 import Home from './components/pages/home.js';
 import Experience from './components/pages/experience.js';
