@@ -1,6 +1,6 @@
 import './App.css';
 import './style/normalize.css';
-import 'boxicons/css/boxicons.min.css';
+import 'boxicons';
 import Nav from './components/layout/Nav.js';
 import Home from './components/pages/home.js';
 import Experience from './components/pages/experience.js';
@@ -10,7 +10,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <Router>
+    <Router basename='/porfolio_2'>
       <div className='divBody manrope'>
         <Nav />
         <Routes>
