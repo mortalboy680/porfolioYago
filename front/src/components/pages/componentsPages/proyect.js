@@ -1,5 +1,5 @@
 import './../stylesComponentsPages/proyect.css';
-import React, { useState } from 'react';
+import React from 'react';
 
 
 const Proyect = () => {
